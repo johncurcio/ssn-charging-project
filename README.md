@@ -2,7 +2,7 @@
 
 0. IoT Router
 
-* * [Installing a GUI](docs/gui-guide.md)
+* [Installing a GUI](docs/gui-guide.md)
 
 1. EATON Charging Station
 
