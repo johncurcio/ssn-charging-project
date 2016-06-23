@@ -37,14 +37,8 @@ With an x86 processor, any Linux partition can run Wine (solution 1) and Wine ca
 
 The main concern with this approach is price. ARM boards are inexpensive and easy to find; the same thing is not true for x86 boards. Furthermore, there are no immediate plans to create x86 compatible IoT routers by SSN. And we have the risk, even if small, that there’s not much capacity in the board to run the executable file with a good performance, if at all. Thus this approach has not been pursued further.  
 
-
 ## Conclusion
 
 With all that said, we still believe it’s possible to replace the laptop with an IoT router, but we may have to either recreate the executable file into an ARM Linux binary or to replace the IoT router boards with x86 boards, which are not feasible at the moment. Using software (Qemu and Wine) may be extremely slow, if we can actually run it. For the time being, we’re considering this project to be unfeasible, but we’re still running tests on Qemu to be sure the performance is as bad as expected. 
-
-
-
-
-
  
 [1] DAM3000 executable can be found at http://www.art-control.com/englishs/products/ProductShow.asp?ID=150 in the file DAM3000.rar
