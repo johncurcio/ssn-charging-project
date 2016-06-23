@@ -1,1 +1,1 @@
-# ssn-charging-project
+# SSN, EV Charging Station Project
