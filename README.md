@@ -7,7 +7,8 @@
 
 ### EATON Charging Station
 
-
+* [Setting Up a Raspberry Pi for ARM to x86 Emulation](docs/eaton-rapberry.md)
+* [Feasibility Report](docs/eaton-feasibility.md)
 
 ### Eluminocity Charging Station
 
