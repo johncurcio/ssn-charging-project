@@ -23,9 +23,9 @@ Mac most likely won't need any configuration, you may find it necessary for Linu
 
 ### IoT Router
 
-After connecting to the IoT router, the charging station may be under the name ``virbr0`` if you type ``ifconfig`` on the terminal. This will make it impossible to connect to the charging module, you need to disable ``virbr0`` on Linux, and change it to ``usb0``.
+After connecting to the IoT router, the charging station may be under the name ``virbr0`` if you type ``$ ifconfig`` on the terminal. This will make it impossible to connect to the charging module, you need to disable ``virbr0`` on Linux, and change it to ``usb0``.
 
-Use ``ifconfig virbr0 down`` to disable it and ``ifconfig usb0 192.168.123.123`` to add the IP address to usb0 and add usb0 to the list. All is detailed at: https://github.com/ev3dev/ev3dev/wiki/Setting-Up-Linux-USB-Ethernet-Networking
+Use ``$ ifconfig virbr0 down`` to disable it and ``$ ifconfig usb0 192.168.123.123`` to add the IP address to usb0 and add usb0 to the list. All is detailed at: https://github.com/ev3dev/ev3dev/wiki/Setting-Up-Linux-USB-Ethernet-Networking
 
 This will work only once. In order to make the changes permanent, you need to change the ``/etc/network/interfaces`` and add the lines:
 
