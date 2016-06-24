@@ -1,5 +1,7 @@
 # SSN, EV Charging Station Project
 
+This project has two branches. The EATON branch and the Eluminocity branch. 
+
 ### IoT Router
 
 * [Initial Setup and Wi-Fi Sharing](docs/iot-setup.md)

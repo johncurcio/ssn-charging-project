@@ -1,0 +1,10 @@
+conn_state:no_vehicle_connected
+auth_state:not_authorized_for_charging
+auth_uid:
+time_since_charging_start:0
+meter_wh:0
+power_w:0
+transaction_wh:0
+display_text:
+
+timestamp, conn_state, auth_state, auth_uid, time_since_charging_start, meter_wh, power_w, transactions_wh, display_text
