@@ -68,6 +68,25 @@ def rewriteFile(filename, csv):
             continue
         print line,
 
+# get the last written line based on timestamp (counting header)
+def getLastLine(filename):
+    i = 0
+    t0 = ""
+    with open(filename) as f:
+        for line in f:
+            if i != 0:
+                t = line.rstrip().split(',')[0]
+                t = time.strptime(t, "%a %b %d %H:%M:%S %Y")
+                if i != 1:
+                    if t0 < t:
+                        pass
+                    else:
+                        break
+                else:
+                    t0 = t
+            i = i + 1
+    return i
+
 def main():
     global reset_file
     global last_line_written
@@ -78,7 +97,8 @@ def main():
     initFile(STATE_FILEPATH, header) # only writes once if the file doesn't exist    
     
     reset_file = length(STATE_FILEPATH) # I need to know the number of line in the file in case of a crash
-    last_line_written += 1
+    #last_line_written += 1
+    last_line_written = getLastLine(STATE_FILEPATH) + 1
     if last_line_written == EOF:
         last_line_written = 2
 
@@ -87,7 +107,7 @@ def main():
     else:
         saveLine(STATE_FILEPATH, csv)
 
-    threading.Timer(1, main).start() # periodically calls main every 60 seconds
+    threading.Timer(10, main).start() # periodically calls main every 60 seconds
     
 if __name__ == '__main__':
     main()
