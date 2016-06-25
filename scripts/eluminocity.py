@@ -3,7 +3,7 @@ import time, threading
 
 STATE_FILEPATH = "state.txt"
 STATE_URL = "http://192.168.123.123/rest/full_state"
-EOF = 10
+MAX_NUMBER_OF_ENTRIES = 300
 
 reset_file = 0
 last_line_written = 1
@@ -100,10 +100,10 @@ def main():
     reset_file = length(STATE_FILEPATH) # I need to know the number of line in the file in case of a crash
     
     last_line_written = getLastLine(STATE_FILEPATH) + 1
-    if last_line_written == EOF:
+    if last_line_written == MAX_NUMBER_OF_ENTRIES:
         last_line_written = 2
 
-    if (reset_file + 1) == EOF:
+    if (reset_file + 1) == MAX_NUMBER_OF_ENTRIES:
         rewriteFile(STATE_FILEPATH, csv)
     else:
         saveLine(STATE_FILEPATH, csv)
