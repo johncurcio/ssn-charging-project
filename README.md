@@ -14,4 +14,5 @@ This project has two branches. The EATON branch and the Eluminocity branch.
 
 ### Eluminocity Charging Station
 
-* [Initial Setup of the Charging module](docs/eluminocity-setup.md)
+* [Initial Setup of the Charging Module](docs/eluminocity-setup.md)
+* [Sharing the IoT Router Internet with the Module](docs/eluminocity-internet.md)
