@@ -2,6 +2,7 @@ import urllib2
 import time, threading
 
 STATE_FILEPATH = "state.txt"
+STATE_URL = "http://192.168.123.123/rest/full_state"
 EOF = 10
 
 reset_file = 0
@@ -23,8 +24,8 @@ def openStateFile(filename):
 def parse(timestamp, url):
     entry = timestamp
     header = "timestamp"
-    #state_file = getStateFile(url)
-    state_file = openStateFile(url)
+    state_file = getStateFile(url)
+    #state_file = openStateFile(url)
     for line in state_file:
         line_arr = line.rstrip().split(':')
         state = line_arr[0]
@@ -92,12 +93,12 @@ def main():
     global last_line_written
 
     timestamp = time.ctime()
-    #csv, header = parse(timestamp, "http://192.168.123.123/rest/full_state")
-    csv, header = parse(timestamp, "full_state")
+    csv, header = parse(timestamp, STATE_URL)
+    #csv, header = parse(timestamp, "full_state")
     initFile(STATE_FILEPATH, header) # only writes once if the file doesn't exist    
     
     reset_file = length(STATE_FILEPATH) # I need to know the number of line in the file in case of a crash
-    #last_line_written += 1
+    
     last_line_written = getLastLine(STATE_FILEPATH) + 1
     if last_line_written == EOF:
         last_line_written = 2
@@ -107,7 +108,8 @@ def main():
     else:
         saveLine(STATE_FILEPATH, csv)
 
-    threading.Timer(10, main).start() # periodically calls main every 60 seconds
+    TIME_IN_SECONDS = 60
+    threading.Timer(TIME_IN_SECONDS, main).start() # periodically calls main every 60 seconds
     
 if __name__ == '__main__':
     main()
