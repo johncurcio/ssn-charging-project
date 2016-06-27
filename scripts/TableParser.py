@@ -41,9 +41,3 @@ class TableParser:
                     line = name+":"+value_tag.text
                 self._contents += self.convert_to_var(line) + '\n'
         return self._contents
-
-if __name__ == '__main__':
-    with open("index.html", 'r') as f:
-        ifile = f.read()
-    tp = TableParser(ifile)
-    print tp.parse()
