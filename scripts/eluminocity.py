@@ -112,5 +112,5 @@ def main():
     threading.Timer(TIME_IN_SECONDS, main).start() # periodically calls main every 60 seconds
     
 if __name__ == '__main__':
+    print "The application is fetching data every minute..."
     main()
-
