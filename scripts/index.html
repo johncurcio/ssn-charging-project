@@ -1,0 +1,378 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>Ebee Charge Point Control Interface</title> 
+</head> 
+<body> 
+<H3>Ebee Charge Point Control Interface <A href="/">Refresh</a> </H1> 
+<hr> 
+<hr><FORM NAME="ChangeConfigForm" ACTION="/" METHOD="POST"> 
+<table border="1" cellspacing="0" cellpadding="5"> 
+<tr> 
+<td colspan="3"> 
+<H4>ChargePointState</H4> 
+</td> 
+</tr> 
+<tr> 
+<td colspan="2">Connector 1 type2 State</td> 
+<td>IDLE</td> 
+</tr> 
+<tr> 
+<td colspan="2">Connector 1 OCPP State</td> 
+<td>IDLE</td> 
+</tr> 
+<tr> 
+<td colspan="2">NetworkState</td> 
+<td>NOT_CONNECTED</td> 
+</tr> 
+<tr> 
+<td colspan="2">IMSI</td> 
+<td>INVALID</td> 
+</tr> 
+<tr> 
+<td colspan="2">IMEI</td> 
+<td>INVALID</td> 
+</tr> 
+<tr> 
+<td colspan="2">ICCID</td> 
+<td>INVALID</td> 
+</tr> 
+<tr> 
+<td colspan="2">Charge Point Location</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">MCC</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">MNC</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">LAC</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">CI</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">RSSI</td> 
+<td>0</td> 
+</tr> 
+<tr> 
+<td colspan="2">Network Registration</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">Operator Selection Mode</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">Access Technology</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">Network</td> 
+<td>UNKNOWN</td> 
+</tr> 
+<tr> 
+<td colspan="2">ChargePointUUID</td> 
+<td>e423d0ac-4e27-4576-b27c-a0437ac6177d</td> 
+</tr> 
+<tr> 
+<td colspan="2">MeterSerial</td> 
+<td>No Id read yet</td> 
+</tr> 
+<tr> 
+<td colspan="2">MeterValue Wh</td> 
+<td>Not Available</td> 
+</tr> 
+<tr> 
+<td colspan="2">MeterPower W</td> 
+<td>0</td> 
+</tr> 
+<tr> 
+<td colspan="2">ChargePointOCPPURL</td> 
+<td>http://192.168.124.123:9080/Ocpp/ChargePointService/</td> 
+</tr> 
+<tr> 
+<td colspan="2">HeartbeatInterval</td> 
+<td>240</td> 
+</tr> 
+<tr> 
+<td colspan="2">Operating cycles (Main Contactor)</td> 
+<td>3</td> 
+</tr> 
+<tr> 
+<td colspan="3"></td> 
+</tr> 
+<tr> 
+<td colspan="3"></td> 
+</tr> 
+<tr> 
+<td colspan="3"></td> 
+</tr> 
+<tr> 
+<td colspan="3"><H4>ChargePointConfiguration</H4></td> 
+</tr> 
+<tr> 
+<td colspan="2">ChargePointId</td> 
+<td> 
+<input name="CHARGEPOINTID" type="text" size="40" maxlength="255" value="+49*839*00000000001"></td> 
+</tr> 
+<tr>
+<td colspan="2">
+Communication Interface
+</td>
+<td>
+<SELECT NAME="BACKENDCOMMINTERFACE"> <br>
+<OPTION VALUE="0"  > GSM </OPTION> <br>
+<OPTION VALUE="1"  > Ethernet </OPTION> <br>
+<OPTION VALUE="2" SELECTED > OFF </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr> 
+<td colspan="2">BinaryOCPPHostname</td> 
+<td> 
+<input name="BINARYOCPPHOSTNAME" type="text" size="40" maxlength="255" value="elinc.de"></td> 
+</tr> 
+<tr> 
+<td colspan="2">BinaryOCPPPort</td> 
+<td> 
+<input name="BINARYOCPPPORT" type="text" size="40" maxlength="255" value="444"></td> 
+</tr> 
+<tr> 
+<td colspan="2">OCPPBackendURL</td> 
+<td> 
+<input name="OCPPBACKENDURL" type="text" size="40" maxlength="255" value="http://elinc.de:8080/OCPPSoapServerIndigoQA/services/CentralSystemService"></td> 
+</tr> 
+<tr> 
+<td colspan="2">OCPPServerPort</td> 
+<td> 
+<input name="OCPPSERVERPORT" type="text" size="10" maxlength="10" value="9080"></td> 
+</tr> 
+<tr>
+<td colspan="2">
+OCPP Variant
+</td>
+<td>
+<INPUT TYPE="radio" NAME="BINARYOCPP" VALUE="0" > Standard SOAP OCPP 1.5 <br>
+<INPUT TYPE="radio" NAME="BINARYOCPP" VALUE="1" checked> Binary OCPP 1.5 <br>
+</td>
+</tr>
+<tr> 
+<td colspan="2">APN</td> 
+<td> 
+<input name="APN" type="text" size="40" maxlength="255" value="UNKNOWN"></td> 
+</tr> 
+<tr> 
+<td colspan="2">APN-Username</td> 
+<td> 
+<input name="APNUSER" type="text" size="40" maxlength="255" value=""></td> 
+</tr> 
+<tr> 
+<td colspan="2">APN-Password</td> 
+<td> 
+<input name="APNPASS" type="text" size="40" maxlength="255" value=""></td> 
+</tr> 
+<tr> 
+<td colspan="2">SIM-PIN Number</td> 
+<td> 
+<input name="SIMPIN" type="text" size="40" maxlength="255" value=""></td> 
+</tr> 
+<tr>
+<td colspan="2">
+OCPP Authorize Remote Starts
+</td>
+<td>
+<INPUT TYPE="radio" NAME="AUTHORIZEREMOTESTARTS" VALUE="0" > Off <br>
+<INPUT TYPE="radio" NAME="AUTHORIZEREMOTESTARTS" VALUE="1" checked> On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+OCPP Info StatusNotifications
+</td>
+<td>
+<INPUT TYPE="radio" NAME="INFOSTATUSNOTIFICATIONS" VALUE="0" > Off <br>
+<INPUT TYPE="radio" NAME="INFOSTATUSNOTIFICATIONS" VALUE="1" checked> On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+OCPP Error StatusNotifications
+</td>
+<td>
+<INPUT TYPE="radio" NAME="ERRORSTATUSNOTIFICATIONS" VALUE="0" > Off <br>
+<INPUT TYPE="radio" NAME="ERRORSTATUSNOTIFICATIONS" VALUE="1" checked> On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Signal disconnection as error
+</td>
+<td>
+<INPUT TYPE="radio" NAME="DISCONNECTASERROR" VALUE="0" checked> Off <br>
+<INPUT TYPE="radio" NAME="DISCONNECTASERROR" VALUE="1" > On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+OCPP Signed Meter Values
+</td>
+<td>
+<INPUT TYPE="radio" NAME="SIGNEDMETERVALUES" VALUE="0" checked> Off <br>
+<INPUT TYPE="radio" NAME="SIGNEDMETERVALUES" VALUE="1" > On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Free Charging
+</td>
+<td>
+<INPUT TYPE="radio" NAME="FREECHARGING" VALUE="0" > Off <br>
+<INPUT TYPE="radio" NAME="FREECHARGING" VALUE="1" checked> On <br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Display Type
+</td>
+<td>
+<SELECT NAME="DISPLAYTYPE"> <br>
+<OPTION VALUE="0" SELECTED > Display not configured </OPTION> <br>
+<OPTION VALUE="1"  > Display not in use </OPTION> <br>
+<OPTION VALUE="2"  > LCD EA W162B-0x25-Ebee </OPTION> <br>
+<OPTION VALUE="3"  > LCD EA W202B </OPTION> <br>
+<OPTION VALUE="4"  > LCD 1602A V2.0 </OPTION> <br>
+<OPTION VALUE="5"  > LCD EA W162B </OPTION> <br>
+<OPTION VALUE="6"  > LCD EA W204B </OPTION> <br>
+<OPTION VALUE="7"  > LCD EA W162B-0x20-Ebee </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Schuko Socket
+</td>
+<td>
+<SELECT NAME="SCHUKO"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > ENABLE OPTO A1/4 </OPTION> <br>
+<OPTION VALUE="2"  > ENABLE OPTO B3/2 </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Schuko Debouncing Delay
+</td>
+<td>
+<SELECT NAME="SCHUKODELAY"> <br>
+<OPTION VALUE="0" SELECTED > Protect socket (Switch off immediately) </OPTION> <br>
+<OPTION VALUE="600"  > Protect contactor (Delay switching off) </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Status Output (Relay K2 [D1/3])
+</td>
+<td>
+<SELECT NAME="RELAYK2"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > Blink while charging </OPTION> <br>
+<OPTION VALUE="2"  > ON while charging </OPTION> <br>
+<OPTION VALUE="3"  > ON while vehicle connected </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Authorization input
+</td>
+<td>
+<SELECT NAME="AUTHINPUT"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > ENABLE OPTO A1/4 </OPTION> <br>
+<OPTION VALUE="2"  > ENABLE OPTO B3/2 </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Tariff and Total Usage Information
+</td>
+<td>
+<SELECT NAME="TARIFFANDTOTALUSAGE"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > ENABLE </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Stop Transaction Mode
+</td>
+<td>
+<SELECT NAME="STOPTRANSACTIONMODE"> <br>
+<OPTION VALUE="0" SELECTED > Normal </OPTION> <br>
+<OPTION VALUE="1"  > Only by unplugging </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Meter configuration
+</td>
+<td>
+<SELECT NAME="METERCONFIGURATION"> <br>
+<OPTION VALUE="0" SELECTED > eHZ Meter </OPTION> <br>
+<OPTION VALUE="1"  > S0 Meter Opto A1/4 </OPTION> <br>
+<OPTION VALUE="2"  > S0 Meter Opto B3/2 </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr> 
+<td colspan="2">S0 Meter Pulses per Kwh</td> 
+<td> 
+<input name="S0METERPULSESXKWH" type="text" size="4" maxlength="4" value="1000"></td> 
+</tr> 
+<tr>
+<td colspan="2">
+Reset meter values after stop transaction
+</td>
+<td>
+<SELECT NAME="RESETMETERVALUES"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > ENABLE </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+Power watchdog
+</td>
+<td>
+<SELECT NAME="POWERWATCHDOG"> <br>
+<OPTION VALUE="0" SELECTED > DISABLE </OPTION> <br>
+<OPTION VALUE="1"  > ENABLE OPTO A1/4 </OPTION> <br>
+<OPTION VALUE="2"  > ENABLE OPTO B3/2 </OPTION> <br>
+</SELECT>
+</td>
+</tr>
+<tr> 
+<td colspan="2">UTC Hour to reboot [0..23]</td> 
+<td> 
+<input name="UTCTIMETOREBOOT" type="text" size="4" maxlength="4" value="1"></td> 
+</tr> 
+<tr>
+<td colspan="3"><INPUT TYPE="SUBMIT" VALUE="Submit Changed Settings"><INPUT TYPE="SUBMIT" NAME="SUBMITANDRESTART" VALUE="Submit Settings and Restart"><INPUT TYPE="SUBMIT" NAME="RESTOREANDRESTART" VALUE="Restore Factory Defaults and Restart"></td> 
+</tr> 
+</table> 
+</FORM> 
+</body> 
+</html> 
