@@ -1,4 +1,4 @@
-How to configure the EV Charging Controller web interface to be accessible through HTTP
+Accessing the Module's web interface through the IoT router's IP
 ---
 
 # Browser access
