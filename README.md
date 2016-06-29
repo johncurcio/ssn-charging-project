@@ -16,4 +16,4 @@ This project has two branches. The EATON branch and the Eluminocity branch.
 
 * [Initial Setup of the Charging Module](docs/eluminocity-setup.md)
 * [Sharing the IoT Router Internet with the Module](docs/eluminocity-internet.md)
-* [Routing HTTP to the Charging Module through the IoT router] (docs/eluminocity-browser.md)
+* [Accessing the Module's web interface through the IoT router] (docs/eluminocity-browser.md)
