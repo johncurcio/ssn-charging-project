@@ -1,4 +1,4 @@
-# EV Charging Station Project
+EV Charging Station Project
 ---
 
 This project has two branches. The *EATON branch* and the *Eluminocity branch*. 
