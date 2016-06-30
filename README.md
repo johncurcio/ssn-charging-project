@@ -2,6 +2,10 @@
 
 This project has two branches. The EATON branch and the Eluminocity branch. 
 
+**Eaton Branch:** There's an EATON EV Charging Station at IIT using a laptop connected to its controller running a Windows executable (DAM3000) to fetch data from the charging station and send it to the network. This project aims to replace the laptop for an IoT router and run this executable under a Linux environment inside the router. Because of incompatibilities between the x86 architecture of the executable and the ARM architecture of the Linux board inside the IoT router, we categorized this branch as unfeasible. 
+
+**Eluminocity Branch:** This is a pilot project to connect a eluminocity EV charging station to an IoT router, fetch data from this charging station and store it in the IoT router to be fetched by the SSN backend. We have implemented a Python script ``eluminocity.py`` which can fetch data and store it in CSV format on the IoT router.  
+
 ### IoT Router
 
 * [Initial Setup and Wi-Fi Sharing](docs/iot-setup.md)
