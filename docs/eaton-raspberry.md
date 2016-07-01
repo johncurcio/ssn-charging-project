@@ -20,6 +20,10 @@ hdmi_drive=2
 
 That should give you the image with Qemu and Wine x86 installed. 
 
+## Setting Up the SSH for Windows
+
+In order to set up the SSH to use the raspberry pi with Windows, you need to disable (if enabled) the WiFi sharing and (re)enable it so the DHCP can work and you can get an IP address for the raspberry py. Using ``arp -a -v`` you can find the raspberry pi's ip address and use it to ssh into it. 
+
 ## Setting Up Wine
 
 In order to run the DAM-3000 software under wine, we need to install the mfc42 dll. 
