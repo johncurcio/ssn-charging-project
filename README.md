@@ -18,7 +18,7 @@ This is a pilot project to connect a eluminocity EV charging station to an IoT r
 
 ### EATON Charging Station
 
-* [Setting Up a Raspberry Pi for ARM to x86 Emulation](docs/eaton-rapberry.md)
+* [Setting Up a Raspberry Pi for ARM to x86 Emulation](docs/eaton-raspberry.md)
 * [Feasibility Report](docs/eaton-feasibility.md)
 
 ### Eluminocity Charging Station
