@@ -14,7 +14,7 @@ The following commands are required:
 On the Charging station:
 
 ```
-# # ip route add default via 192.168.123.220
+# ip route add default via 192.168.123.220
 ```
 
 On the IoT router:
