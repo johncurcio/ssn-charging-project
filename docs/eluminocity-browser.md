@@ -11,6 +11,13 @@ through the IoT router to the charging controller, so that a simple HTTP request
 
 The following commands are required:
 
+On the Charging station:
+
 ```
-iptables -A PREROUTING -t nat -p tcp --dport 80 -j DNAT --to 192.168.123.123:80
+# # ip route add default via 192.168.123.220
+```
+
+On the IoT router:
+```
+# iptables -A PREROUTING -t nat -p tcp --dport 80 -j DNAT --to 192.168.123.123:80
 ```
