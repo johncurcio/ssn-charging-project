@@ -26,3 +26,8 @@ This is a pilot project to connect a eluminocity EV charging station to an IoT r
 * [Initial Setup of the Charging Module](docs/eluminocity-setup.md)
 * [Sharing the IoT Router Internet with the Module](docs/eluminocity-internet.md)
 * [Accessing the Module's web interface through the IoT router's IP] (docs/eluminocity-browser.md)
+
+### Next Steps
+
+* [Use OCPP 1.5 to extract more data from the eluminocity charger](docs/eluminocity-next.md)
+* [Finish setting up the Raspberry Pi image and connect it to the IoT Router](docs/eaton-next.md)
