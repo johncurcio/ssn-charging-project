@@ -25,7 +25,7 @@ This is a pilot project to connect a eluminocity EV charging station to an IoT r
 
 * [Initial Setup of the Charging Module](docs/eluminocity-setup.md)
 * [Sharing the IoT Router Internet with the Module](docs/eluminocity-internet.md)
-* [Accessing the Module's web interface through the IoT router's IP] (docs/eluminocity-browser.md)
+* [Accessing the Module's web interface through the IoT router's IP](docs/eluminocity-browser.md)
 
 ### Next Steps
 
